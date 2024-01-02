@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkoznur_yilmaz_website=self.webpackChunkoznur_yilmaz_website||[]).push([[3140],{7761:e=>{function a(e){e.languages.hsts={directive:{pattern:/\b(?:includeSubDomains|max-age|preload)(?=[\s;=]|$)/i,alias:"property"},operator:/=/,punctuation:/;/}}e.exports=a,a.displayName="hsts",a.aliases=[]}}]);
-//# sourceMappingURL=react-syntax-highlighter_languages_refractor_hsts.5bba67b7.chunk.js.map
