@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkoznur_yilmaz_website=self.webpackChunkoznur_yilmaz_website||[]).push([[1438],{7209:e=>{function a(e){e.languages.arff={comment:/%.*/,string:{pattern:/(["'])(?:\\.|(?!\1)[^\\\r\n])*\1/,greedy:!0},keyword:/@(?:attribute|data|end|relation)\b/i,number:/\b\d+(?:\.\d+)?\b/,punctuation:/[{},]/}}e.exports=a,a.displayName="arff",a.aliases=[]}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_refractor_arff.d58865d8.chunk.js.map
