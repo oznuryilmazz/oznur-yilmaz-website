@@ -45,12 +45,22 @@ export default function AboutMe() {
                 <br /> .NET & React Js Developer
               </Typography>
               <Typography variant="body1" color="white">
-                I've been a junior software developer for 4 years. I used this
-                programming languages; Python, .Net, Angular, Php, SQL in my
-                job. Also I am a freelancer who do website project for large
-                companies. Some of my website projects have designed with
-                WordPress. Large website projects have designed with PHP, HTML,
-                CSS and SQL. I am looking for exciting new projects.
+                Proficiency in front-end technologies such as
+                HTML/CSS,JavaScript, and modern JavaScript frameworks
+                (e.g.,React,Angular). In background web development for
+                data-driven products.
+              </Typography>
+              <Typography variant="body1" color="white">
+                Using Git in proffesional workspace ,including branching and
+                merging strategies.
+              </Typography>
+              <Typography variant="body1" color="white">
+                Familiarity with arange of databases, including MSSQL, MySQL,
+                Redis, MongoDb(a bit information) etc.
+              </Typography>
+              <Typography variant="body1" color="white">
+                Services using.Net Core, Node JS and MVC). Familiarity with
+                RESTful APIS.
               </Typography>
               <Divider />
               <Stack
