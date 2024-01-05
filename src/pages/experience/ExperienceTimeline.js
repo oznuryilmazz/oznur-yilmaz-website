@@ -1,13 +1,11 @@
 import { Icon } from "@iconify/react";
 import {
   Badge,
-  Button,
   Container,
   Stack,
   Typography,
   useMediaQuery,
 } from "@mui/material";
-import { Link } from "react-router-dom";
 import {
   Box,
   Card,
@@ -238,7 +236,11 @@ const experienceList = [
 export default function ExperienceTimeline() {
   const isMobile = useMediaQuery("(max-width: 1000px)");
   return (
-    <Container maxWidth="fluid" sx={{ backgroundColor: "#0D0D0D" }}>
+    <Container
+      maxWidth="fluid"
+      sx={{ backgroundColor: "#0D0D0D" }}
+      disableGutters
+    >
       <Container
         maxWidth="fluid"
         sx={{
@@ -251,6 +253,7 @@ export default function ExperienceTimeline() {
           textAlign: "center",
           height: "50vh",
         }}
+        disableGutters
       >
         <Stack spacing={2}>
           <Typography variant="body1" fontWeight="bold" color="primary">
@@ -342,23 +345,6 @@ export default function ExperienceTimeline() {
             );
           })}
         </Box>
-        <Stack justifyContent="center" alignItems="center" width="100%" mt={10}>
-          <Button
-            variant="contained"
-            size="large"
-            component={Link}
-            to={"../experience"}
-            sx={{
-              backgroundColor: "primary",
-              color: "black",
-              textTransform: "capitalize",
-              borderRadius: 2,
-              width: 150,
-            }}
-          >
-            See More
-          </Button>
-        </Stack>
       </Container>
     </Container>
   );

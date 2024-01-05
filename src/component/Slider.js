@@ -10,7 +10,7 @@ export default function Slider() {
       maxWidth="fluid"
       style={{
         backgroundImage: "url(./img/background.jpg)",
-        height: (isMobile === true && "100%") || "100vh",
+        height: (isMobile === true && "140vh") || "100vh",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

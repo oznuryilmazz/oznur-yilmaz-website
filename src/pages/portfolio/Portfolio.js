@@ -1,7 +1,6 @@
 import { Icon } from "@iconify/react";
 import { AspectRatio, Box, Card, CardCover, Chip, IconButton } from "@mui/joy";
 import {
-  Button,
   Container,
   Grid,
   Stack,
@@ -48,6 +47,7 @@ export default function Portfolio() {
       sx={{
         backgroundImage: "url(./img/background-middle.jpg)",
       }}
+      disableGutters
     >
       <Container
         maxWidth="fluid"
@@ -61,6 +61,7 @@ export default function Portfolio() {
           textAlign: "center",
           height: "50vh",
         }}
+        disableGutters
       >
         <Stack spacing={2}>
           <Typography variant="body1" fontWeight="bold" color="primary">
@@ -180,23 +181,6 @@ export default function Portfolio() {
             </Grid>
           ))}
         </Grid>
-        <Stack justifyContent="center" alignItems="center" width="100%" mt={10}>
-          <Button
-            variant="contained"
-            size="large"
-            component={Link}
-            to={"../portfolio"}
-            sx={{
-              backgroundColor: "primary",
-              color: "black",
-              textTransform: "capitalize",
-              borderRadius: 2,
-              width: 150,
-            }}
-          >
-            See More
-          </Button>
-        </Stack>
       </Container>
     </Container>
   );
