@@ -1,6 +1,5 @@
 import { Icon } from "@iconify/react";
 import {
-  Badge,
   Button,
   Container,
   Stack,
@@ -17,124 +16,8 @@ import {
   ListItem,
   ListItemDecorator,
 } from "@mui/joy";
-import { styled } from "@mui/material/styles";
+import experienceListPart from "../../data/experienceListPart";
 
-const StyledBadge = styled(Badge)(({ theme }) => ({
-  "& .MuiBadge-badge": {
-    backgroundColor: "#44b700",
-    color: "#44b700",
-    marginRight: "-6px",
-    marginTop: "5px",
-    boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
-    "&::after": {
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      borderRadius: "50%",
-      animation: "ripple 1.2s infinite ease-in-out",
-      border: "1px solid currentColor",
-      content: '""',
-    },
-  },
-  "@keyframes ripple": {
-    "0%": {
-      transform: "scale(.8)",
-      opacity: 1,
-    },
-    "100%": {
-      transform: "scale(2.4)",
-      opacity: 0,
-    },
-  },
-}));
-
-const experienceList = [
-  {
-    location: "Istanbul - Turkey",
-    position: "Full Stack Developer",
-    company: "Frostline Games",
-    date: (
-      <Stack direction="row" spacing={1}>
-        <Typography variant="caption" color="white" gutterBottom>
-          July 2022 - Present
-        </Typography>
-        <StyledBadge
-          overlap="circular"
-          anchorOrigin={{ vertical: "top", horizontal: "right" }}
-          variant="dot"
-        ></StyledBadge>
-      </Stack>
-    ),
-    workDetail: [
-      {
-        description:
-          "New game support ticket system(Dashboard & Website) has been developed with RESTful APIs, React Hooks, Context and React design patterns.",
-      },
-      {
-        description:
-          "Played a key role in modernising components of an React.js-based dashboard application using HTML, CSS, and JavaScript.",
-      },
-      {
-        description:
-          "Delivered an array of features leveraging React.js/Javascript, React Hooks, Context, and other React.js design patterns, enhancing the application's usability and efficiency.",
-      },
-      {
-        description:
-          "In the React.js project, Auth functions and pages were developed to log in to the system. While doing this, RESTful API's, Bearer and JWT Token were used.",
-      },
-      {
-        description: "Started to develop MOBA game dashboard and website",
-      },
-      {
-        description:
-          "Developed Game & Website Backend with .NET and database is MSSQL",
-      },
-      {
-        description: "Called RESTful API’s with axios library in the frontend",
-      },
-      {
-        description:
-          "Using Git in proffesional workspace, including branching and merging strategies",
-      },
-    ],
-  },
-  {
-    location: "Istanbul - Turkey",
-    position: "Software Developer",
-    company: "Marmara University",
-    date: (
-      <Stack direction="row" spacing={1}>
-        <Typography variant="caption" color="white" gutterBottom>
-          2021 - 2022
-        </Typography>
-      </Stack>
-    ),
-    workDetail: [
-      {
-        description:
-          "New university website (Dashboard & Website) has been developed with using HTML, CSS, and JavaScript",
-      },
-      {
-        description:
-          "Bugs are fixed in main website and javascript animations added to main website ",
-      },
-      {
-        description:
-          "Database design patters is developed and documented with well code and clean structure",
-      },
-      {
-        description:
-          "A system that scores how original the documentation prepared by students is after uploading it to the system was developed with ASP .NET MVC.",
-      },
-      {
-        description:
-          "Using Git in proffesional workspace, including branching and merging strategies",
-      },
-    ],
-  },
-];
 export default function ExperienceTimelinePart() {
   const isMobile = useMediaQuery("(max-width: 1000px)");
   return (
@@ -183,7 +66,7 @@ export default function ExperienceTimelinePart() {
             gap: 2,
           }}
         >
-          {experienceList.map((value, index) => {
+          {experienceListPart.map((value, index) => {
             return (
               <Card
                 size="lg"
