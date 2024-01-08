@@ -1,32 +1,6 @@
 import { LinearProgress } from "@mui/joy";
 import { Container, Stack, Typography, useMediaQuery } from "@mui/material";
-
-const experienceList = [
-  {
-    count: 80,
-    experienceName: "REACT JS",
-  },
-  {
-    count: 70,
-    experienceName: "JAVASCRIPT",
-  },
-  {
-    count: 60,
-    experienceName: ".NET",
-  },
-  {
-    count: 60,
-    experienceName: "UI/UX",
-  },
-  {
-    count: 50,
-    experienceName: "DEVOPS",
-  },
-  {
-    count: 100,
-    experienceName: "WORDPRESS",
-  },
-];
+import skillList from "../../data/skillList";
 
 export default function MySkill() {
   const isMobile = useMediaQuery("(max-width: 1000px)");
@@ -60,7 +34,7 @@ export default function MySkill() {
             width={(isMobile === true && "100%") || "60%"}
             spacing={3}
           >
-            {experienceList.map((value, index) => (
+            {skillList.map((value, index) => (
               <Stack
                 direction="row"
                 spacing={3}
