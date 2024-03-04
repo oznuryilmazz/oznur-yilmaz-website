@@ -6,6 +6,7 @@ import { HelmetProvider } from "react-helmet-async";
 import ScrollToTop from "./component/ScrollToTop";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <HelmetProvider>
     <BrowserRouter>
